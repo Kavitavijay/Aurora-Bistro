@@ -31,7 +31,29 @@ A modern and responsive restaurant website built using **HTML, CSS, and JavaScri
 Aurora-Bistro/
 ├── assets/
 ├── css/
+│   ├── about.css
+│   |── responsive.css
+│   ├── menu.css
+│   ├── cart.css
+│   ├── checkout.css
+│   └── order-success.css
+│   ├── chefs.css
+│   ├── contact.css
+│   ├── events.css
+│   ├── reservation.css
+│   └── reviews.css
+│   └── style.css
 ├── js/
+│   ├── app.js
+│   ├── menu.js
+│   ├── cart.js
+│   ├── checkout.js
+│   └── order-success.js
+│   ├── chefs.js
+│   ├── contact.js
+│   ├── events.js
+│   ├── reservation.js
+│   └── reviews.js 
 ├── index.html
 ├── about.html
 ├── menu.html
