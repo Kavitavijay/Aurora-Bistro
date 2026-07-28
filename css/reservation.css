@@ -1,0 +1,277 @@
+/* ==========================================
+   PAGE BANNER
+========================================== */
+
+.page-banner{
+    height:55vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../assets/images/menu-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.banner-content h1{
+    font-size:4rem;
+    font-family:var(--heading);
+    margin-bottom:15px;
+}
+
+.banner-content p{
+    max-width:650px;
+    margin:auto;
+    color:#eee;
+    line-height:1.8;
+}
+
+/* ==========================================
+   RESERVATION LAYOUT
+========================================== */
+
+.reservation-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    padding:100px 10%;
+    align-items:flex-start;
+}
+
+.sub-heading{
+    color:var(--primary);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight:600;
+}
+
+.reservation-info h2{
+    font-family:var(--heading);
+    font-size:2.8rem;
+    margin:20px 0;
+}
+
+.reservation-info p{
+    color:var(--gray);
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+/* ==========================================
+   INFO BOXES
+========================================== */
+
+.info-box{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.info-item{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.info-item i{
+    width:55px;
+    height:55px;
+    background:var(--primary);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:1.3rem;
+}
+
+.info-item h4{
+    margin-bottom:8px;
+}
+
+.info-item p{
+    margin:3px 0;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.reservation-form-container{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.reservation-form-container h2{
+    font-family:var(--heading);
+    margin-bottom:30px;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:1rem;
+    transition:.3s;
+    font-family:inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(200,155,60,.15);
+}
+
+textarea{
+    resize:vertical;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.reserve-btn{
+    width:100%;
+    margin-top:10px;
+}
+
+/* ==========================================
+   BENEFITS
+========================================== */
+
+.reservation-benefits{
+    background:#fafafa;
+}
+
+/* Uses feature-card styles from style.css */
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq{
+    background:#fff;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:40px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.faq-item{
+    background:#fff;
+    padding:25px;
+    border-left:5px solid var(--primary);
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.faq-item:hover{
+    transform:translateY(-5px);
+}
+
+.faq-item h3{
+    margin-bottom:12px;
+    font-family:var(--heading);
+}
+
+.faq-item p{
+    color:var(--gray);
+    line-height:1.8;
+}
+
+/* ==========================================
+   SUCCESS MESSAGE
+========================================== */
+
+.success-message{
+    margin-top:20px;
+    padding:15px;
+    border-radius:8px;
+    background:#d4edda;
+    color:#155724;
+    display:none;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .reservation-section{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .banner-content h1{
+        font-size:2.8rem;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .reservation-form-container{
+        padding:30px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .page-banner{
+        height:40vh;
+    }
+
+    .banner-content h1{
+        font-size:2rem;
+    }
+
+    .reservation-section{
+        padding:70px 5%;
+    }
+
+    .reservation-info h2{
+        font-size:2rem;
+    }
+
+    .reservation-form-container{
+        padding:20px;
+    }
+
+    .info-item{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+}

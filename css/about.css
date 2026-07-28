@@ -1,0 +1,282 @@
+/* ==========================================
+   PAGE HERO
+========================================== */
+
+.page-banner{
+    height:60vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../assets/images/menu-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.banner-content h1{
+    font-size:4rem;
+    font-family:var(--heading);
+    margin-bottom:15px;
+}
+
+.banner-content p{
+    font-size:1.15rem;
+    color:#eee;
+    max-width:650px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* ==========================================
+   ABOUT STORY
+========================================== */
+
+.about-story{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    background:#fff;
+}
+
+.story-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    transition:.5s;
+}
+
+.story-image img:hover{
+    transform:scale(1.03);
+}
+
+.story-content h5{
+    color:var(--primary);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.story-content h2{
+    font-family:var(--heading);
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.story-content p{
+    color:var(--gray);
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   MISSION
+========================================== */
+
+.mission{
+    background:#f8f8f8;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.mission-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.mission-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.mission-card i{
+    font-size:3rem;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.mission-card h3{
+    font-size:1.6rem;
+    margin-bottom:15px;
+    font-family:var(--heading);
+}
+
+.mission-card p{
+    color:var(--gray);
+    line-height:1.8;
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.timeline{
+    background:#fff;
+}
+
+.timeline-container{
+    max-width:900px;
+    margin:auto;
+    position:relative;
+    padding-left:40px;
+    border-left:4px solid var(--primary);
+}
+
+.timeline-item{
+    margin-bottom:50px;
+    position:relative;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-52px;
+    top:5px;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--primary);
+    border:5px solid #fff;
+    box-shadow:0 0 0 4px rgba(200,155,60,.2);
+}
+
+.timeline-item h3{
+    font-size:2rem;
+    color:var(--primary);
+    margin-bottom:10px;
+    font-family:var(--heading);
+}
+
+.timeline-item p{
+    color:var(--gray);
+    line-height:1.8;
+}
+
+/* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+.why-us{
+    background:#fafafa;
+}
+
+/* Reuses .feature-container and .feature-card
+   from style.css */
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.statistics{
+    margin-top:0;
+}
+
+/* ==========================================
+   IMAGE HOVER EFFECT
+========================================== */
+
+.story-image{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.about-story,
+.mission-card,
+.timeline-item{
+    animation:fadeInUp .8s ease;
+}
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .about-story{
+        grid-template-columns:1fr;
+    }
+
+    .story-content{
+        text-align:center;
+    }
+
+    .banner-content h1{
+        font-size:3rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .page-banner{
+        height:45vh;
+        padding:0 20px;
+    }
+
+    .banner-content h1{
+        font-size:2.5rem;
+    }
+
+    .story-content h2{
+        font-size:2.3rem;
+    }
+
+    .timeline-container{
+        padding-left:25px;
+    }
+
+    .timeline-item::before{
+        left:-38px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .banner-content h1{
+        font-size:2rem;
+    }
+
+    .banner-content p{
+        font-size:.95rem;
+    }
+
+    .story-content h2{
+        font-size:2rem;
+    }
+
+    .mission-card{
+        padding:30px 20px;
+    }
+
+    .timeline-item h3{
+        font-size:1.6rem;
+    }
+
+}

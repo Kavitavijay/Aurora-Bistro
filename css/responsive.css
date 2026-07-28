@@ -1,0 +1,335 @@
+/* ==========================================
+   LARGE DEVICES (1200px and below)
+========================================== */
+
+@media (max-width:1200px){
+
+    section{
+        padding:80px 6%;
+    }
+
+    .navbar{
+        padding:20px 6%;
+    }
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+}
+
+/* ==========================================
+   LAPTOPS (992px)
+========================================== */
+
+@media (max-width:992px){
+
+    .hero h1{
+        font-size:3.4rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .statistics{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:40px;
+    }
+
+}
+
+/* ==========================================
+   TABLETS (768px)
+========================================== */
+
+@media (max-width:768px){
+
+    section{
+        padding:70px 5%;
+    }
+
+    /* Mobile Navigation */
+
+    #menu-btn{
+        display:block;
+    }
+
+    .nav-menu{
+
+        position:fixed;
+        top:80px;
+        right:-100%;
+        width:280px;
+        height:100vh;
+
+        background:#111;
+
+        flex-direction:column;
+
+        padding:40px;
+
+        gap:30px;
+
+        transition:.4s;
+
+    }
+
+    .nav-menu.active{
+
+        right:0;
+
+    }
+
+    .nav-menu li a{
+
+        color:#fff;
+        font-size:1.1rem;
+
+    }
+
+    .hero{
+
+        padding:0 25px;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero-buttons{
+
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .secondary-btn{
+
+        margin-left:0;
+
+    }
+
+    .section-title h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .feature-container{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .special-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .statistics{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE DEVICES (576px)
+========================================== */
+
+@media (max-width:576px){
+
+    .navbar{
+
+        padding:18px 20px;
+
+    }
+
+    .logo{
+
+        font-size:1.6rem;
+
+    }
+
+    .hero{
+
+        height:100vh;
+
+    }
+
+    .hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero p{
+
+        font-size:.95rem;
+
+    }
+
+    .subtitle{
+
+        font-size:.8rem;
+        letter-spacing:2px;
+
+    }
+
+    .btn{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+    .section-title h2{
+
+        font-size:2rem;
+
+    }
+
+    .feature-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .statistics{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .food-content{
+
+        padding:20px;
+
+    }
+
+    .food-content h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .price-row{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .cta-content h2{
+
+        font-size:2rem;
+
+    }
+
+    .cta-content p{
+
+        font-size:.95rem;
+
+    }
+
+    #topBtn{
+
+        width:50px;
+        height:50px;
+        right:20px;
+        bottom:20px;
+
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE (400px)
+========================================== */
+
+@media (max-width:400px){
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero-buttons{
+
+        width:100%;
+
+    }
+
+    .btn{
+
+        padding:14px;
+
+    }
+
+    .section-title h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .feature-card{
+
+        padding:30px 20px;
+
+    }
+
+    .food-card img{
+
+        height:220px;
+
+    }
+
+}
+
+/* ==========================================
+   LANDSCAPE MOBILE
+========================================== */
+
+@media (max-height:500px){
+
+    .hero{
+
+        height:auto;
+        padding:140px 20px 80px;
+
+    }
+
+}

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Aurora Bistro</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header active">
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<i class="fa-solid fa-utensils"></i>
+
+Aurora Bistro
+
+</a>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="menu.html">Menu</a></li>
+
+<li><a href="chefs.html">Chefs</a></li>
+
+<li><a href="events.html">Events</a></li>
+
+<li><a href="reservation.html">Reservation</a></li>
+
+<li><a href="reviews.html">Reviews</a></li>
+
+<li><a href="contact.html" class="active">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<a href="cart.html" class="cart-btn">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span class="cart-count">0</span>
+
+</a>
+
+<button id="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="page-banner">
+
+<div class="banner-content">
+
+<h1>Contact Aurora Bistro</h1>
+
+<p>
+
+We'd love to hear from you. Reach out for reservations,
+private events, catering, or any questions.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT INFO ================= -->
+
+<section class="contact-info">
+
+<div class="section-title">
+
+<span>Get In Touch</span>
+
+<h2>We're Here To Help</h2>
+
+</div>
+
+<div class="contact-cards">
+
+<div class="contact-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Address</h3>
+
+<p>
+
+123 Aurora Street<br>
+Downtown District<br>
+New York, NY 10001
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<h3>Call Us</h3>
+
+<p>
+
++1 (555) 123-4567<br>
++1 (555) 987-6543
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>Email</h3>
+
+<p>
+
+info@aurorabistro.com<br>
+support@aurorabistro.com
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>Opening Hours</h3>
+
+<p>
+
+Monday - Sunday<br>
+
+10:00 AM - 11:00 PM
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-section">
+
+<div class="contact-form">
+
+<h2>Send Us A Message</h2>
+
+<form id="contactForm">
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="name">
+
+Full Name
+
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="John Smith"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="email">
+
+Email Address
+
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="john@example.com"
+required>
+
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="phone">
+
+Phone Number
+
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="+1 555 123 4567"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="subject">
+
+Subject
+
+</label>
+
+<select id="subject" required>
+
+<option value="">Choose Subject</option>
+
+<option>General Inquiry</option>
+
+<option>Reservation</option>
+
+<option>Private Event</option>
+
+<option>Catering</option>
+
+<option>Feedback</option>
+
+<option>Career</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label for="message">
+
+Message
+
+</label>
+
+<textarea
+id="message"
+rows="7"
+placeholder="Write your message here..."
+required></textarea>
+
+</div>
+
+<button
+type="submit"
+class="btn primary-btn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+<!-- ================= GOOGLE MAP ================= -->
+
+<div class="contact-map">
+
+    <h2>Find Us</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=Times+Square+New+York&output=embed"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+</section>
+
+<!-- ================= SOCIAL MEDIA ================= -->
+
+<section class="social-section">
+
+    <div class="section-title">
+
+        <span>Stay Connected</span>
+
+        <h2>Follow Aurora Bistro</h2>
+
+    </div>
+
+    <div class="social-container">
+
+        <a href="https://www.facebook.com" class="social-card">
+
+            <i class="fab fa-facebook-f"></i>
+
+            <h3>Facebook</h3>
+
+            <p>Daily specials and announcements.</p>
+
+        </a>
+
+        <a href="https://www.instagram.com" class="social-card">
+
+            <i class="fab fa-instagram"></i>
+
+            <h3>Instagram</h3>
+
+            <p>Delicious food photography and reels.</p>
+
+        </a>
+
+        <a href="https://twitter.com" class="social-card">
+
+            <i class="fab fa-x-twitter"></i>
+
+            <h3>X (Twitter)</h3>
+
+            <p>Latest news and restaurant updates.</p>
+
+        </a>
+
+        <a href="https://www.youtube.com" class="social-card">
+
+            <i class="fab fa-youtube"></i>
+
+            <h3>YouTube</h3>
+
+            <p>Chef recipes and behind-the-scenes videos.</p>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="contact-faq">
+
+    <div class="section-title">
+
+        <span>Questions</span>
+
+        <h2>Frequently Asked Questions</h2>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-card">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            <h3>Do I need a reservation?</h3>
+
+            <p>
+
+                Walk-ins are welcome, but reservations are recommended during weekends and holidays.
+
+            </p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <i class="fa-solid fa-cake-candles"></i>
+
+            <h3>Can I host private events?</h3>
+
+            <p>
+
+                Yes! We organize birthdays, anniversaries, business dinners, and family celebrations.
+
+            </p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <i class="fa-solid fa-utensils"></i>
+
+            <h3>Do you offer vegetarian options?</h3>
+
+            <p>
+
+                Absolutely. We have a wide variety of vegetarian and vegan-friendly dishes.
+
+            </p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <h3>What payment methods do you accept?</h3>
+
+            <p>
+
+                We accept cash, credit/debit cards, Apple Pay, Google Pay, and contactless payments.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="newsletter-content">
+
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <p>
+
+            Get exclusive offers, seasonal menus, and chef's specials delivered directly to your inbox.
+
+        </p>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email">
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>Aurora Bistro</h3>
+
+            <p>
+
+                Where Every Bite Becomes a Memory.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="menu.html">Menu</a></li>
+
+                <li><a href="reservation.html">Reservation</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 Aurora Bistro. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/contact.js"></script>
+
+</body>
+</html>

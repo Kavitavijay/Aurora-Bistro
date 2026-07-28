@@ -1,0 +1,319 @@
+/* ==========================================
+   PAGE BANNER
+========================================== */
+
+.page-banner{
+    height:55vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../assets/images/menu-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.banner-content h1{
+    font-size:4rem;
+    font-family:var(--heading);
+    margin-bottom:15px;
+}
+
+.banner-content p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#eee;
+}
+
+/* ==========================================
+   EVENTS SECTION
+========================================== */
+
+.events-section{
+    padding:100px 10%;
+    background:#fafafa;
+}
+
+.events-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:35px;
+}
+
+.event-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.event-card:hover{
+    transform:translateY(-12px);
+}
+
+.event-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.event-card:hover img{
+    transform:scale(1.08);
+}
+
+.event-content{
+    padding:30px;
+}
+
+.event-date{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    color:var(--primary);
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.event-content h3{
+    font-family:var(--heading);
+    margin-bottom:15px;
+}
+
+.event-content p{
+    color:var(--gray);
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* ==========================================
+   PRIVATE EVENTS
+========================================== */
+
+.private-events{
+    padding:100px 10%;
+    background:#fff;
+}
+
+.private-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    margin-top:50px;
+}
+
+.private-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 20px 45px rgba(0,0,0,.1);
+}
+
+.private-text h3{
+    font-family:var(--heading);
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.private-text p{
+    color:var(--gray);
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.private-text ul{
+    list-style:none;
+    margin-bottom:35px;
+}
+
+.private-text ul li{
+    margin-bottom:15px;
+    color:#555;
+    font-size:1.05rem;
+}
+
+.private-text ul li i{
+    color:var(--primary);
+    margin-right:12px;
+}
+
+/* ==========================================
+   EVENT GALLERY
+========================================== */
+
+.event-gallery{
+    padding:100px 10%;
+    background:#fafafa;
+}
+
+.gallery-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:18px;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.event-content .btn,
+.private-text .btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.event-content .btn:hover,
+.private-text .btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .private-container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .banner-content h1{
+        font-size:2.8rem;
+    }
+
+    .events-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .page-banner{
+        height:40vh;
+    }
+
+    .banner-content h1{
+        font-size:2rem;
+    }
+
+    .events-section,
+    .private-events,
+    .event-gallery{
+        padding:70px 5%;
+    }
+
+    .event-card img{
+        height:220px;
+    }
+
+    .private-text h3{
+        font-size:1.6rem;
+    }
+
+}
+/* ==========================================
+   SCROLL ANIMATION
+========================================== */
+
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ==========================================
+   LIGHTBOX
+========================================== */
+
+.lightbox{
+
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.92);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.lightbox-image{
+
+    width:90%;
+    max-width:900px;
+
+    border-radius:15px;
+
+    animation:zoom .4s ease;
+
+}
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:30px;
+    right:40px;
+
+    color:#fff;
+
+    font-size:3rem;
+
+    cursor:pointer;
+
+}
+
+@keyframes zoom{
+
+    from{
+
+        transform:scale(.8);
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+        opacity:1;
+
+    }
+
+}
