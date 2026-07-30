@@ -2,6 +2,11 @@
 
 A modern and responsive restaurant website built using **HTML, CSS, and JavaScript**. The project provides an interactive food ordering experience with menu browsing, shopping cart, checkout, and order confirmation.
 
+## 🌐 Live Demo
+
+👉 https://kavitavijay.github.io/Aurora-Bistro/
+
+
 ## ✨ Features
 
 - Responsive Design
